@@ -63,3 +63,9 @@ span.journal{
 span.volume{
     font-weight:bold;
 }
+details.title-and-abstract > summary{
+    cursor: pointer;
+    list-style: none;
+    text-decoration: underline;
+    color: blue
+}
