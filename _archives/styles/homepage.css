@@ -1,0 +1,65 @@
+body {
+    background-color:bisque;
+    max-width:95%; 
+}
+table.bordered, table.title-and-content{
+    margin-bottom:1em;
+    width:100%;
+}
+table.bordered, table.bordered th, table.bordered td, table.title-and-content{
+    border-collapse:collapse;
+    border:3px groove lightgray;
+}
+table.title-and-content th{
+    text-align:left;
+}
+table.title-and-content th::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    border-bottom-style:solid;
+    border-width:2px;
+    border-image:linear-gradient(to right, sienna, bisque);
+    border-image-slice:1;
+}
+p {
+    text-indent:1.0em;
+    margin:10px;
+}
+h1 {
+    margin:10px;
+    font-weight:normal;
+    font-family:serif;
+}
+h2 {
+    margin-left:10px;
+    margin-top:3px;
+    margin-bottom:2px;
+    font-weight:normal;
+    font-family:serif;
+}
+ul{
+    padding-left:30px;
+    margin-top:5px;
+}
+ul li{
+    margin-top:2px;
+}
+/* ol is usually reversed to list publications. They are ordered by the date they are posted, regardless of their submission status.*/
+ol{
+    padding-left:30px;
+    margin-top:5px;
+}
+ol li{
+    margin-top:1ex;
+}
+span.title{
+    font-weight:bold;
+}
+span.journal{
+    font-style:italic;
+    color:maroon
+}
+span.volume{
+    font-weight:bold;
+}
